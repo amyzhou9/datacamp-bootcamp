@@ -11,16 +11,22 @@ class CardEditor extends React.Component{
         this.setState({[event.target.name]: event.target.value});
 
     addCard = () => {
-        this.props.addCard(this.state);
-        this.setState({front: '', back: ''});
-
+        if(this.state.front.trim() && this.state.back.trim()){
+            this.props.addCard(this.state);
+            this.setState({front: '', back: ''});
+        }
 
     };
 
-    deleteCard = index => this.props.deleteCard(index);
+    deleteCard = index => {
+        if(index != 0){
+            this.props.deleteCard(index);
+        }
+    };
 
     
     render(){
+        console.log(this.props.cards[0]);
         const cards= this.props.cards.map((card, index) =>{
             return(
                 <tr key={index}>

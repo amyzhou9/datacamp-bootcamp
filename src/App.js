@@ -10,7 +10,7 @@ class App extends React.Component{
         { front: 'front1', back: 'back1' },
         { front: 'front2', back: 'back2' },
       ],
-      editor: true,
+      editor: false,
     };
   }
 
@@ -38,7 +38,7 @@ class App extends React.Component{
         />
       );
     } else {
-      return <CardViewer switchMode={this.switchMode} />;
+      return <CardViewer cards = {this.state.cards} switchMode={this.switchMode} />;
     }
   }
 
