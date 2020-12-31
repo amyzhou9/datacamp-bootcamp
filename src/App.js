@@ -1,9 +1,21 @@
 import React from 'react';
-import logo from './logo.svg';
+import CardEditor from './CardEditor';
 
+class App extends React.Component{
+  constructor(props){
+    super(props);
+    this.state= {
+      cards : [
+        { front: 'front1', back: 'back1' },
+        { front: 'front2', back: 'back2' },
+      ]
+    }
+  }
 
-function App() {
-  return <div className="App">Testing</div>;
+  render() {
+    return <CardEditor cards={this.state.cards} />;
+  }
+
 }
 
 export default App;
