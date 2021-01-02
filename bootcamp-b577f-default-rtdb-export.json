@@ -1,0 +1,28 @@
+{
+  "flashcards" : {
+    "set1" : {
+      "cards" : [ {
+        "back" : "blah2",
+        "front" : "blah1"
+      }, {
+        "back" : "blah4",
+        "front" : "blah3"
+      }, {
+        "back" : "blah6",
+        "front" : "blah5"
+      } ]
+    },
+    "set2" : {
+      "cards" : [ {
+        "back" : "blah2",
+        "front" : "blah1"
+      }, {
+        "back" : "blah2",
+        "front" : "blah1"
+      }, {
+        "back" : "blah4",
+        "front" : "blah3"
+      } ]
+    }
+  }
+}
